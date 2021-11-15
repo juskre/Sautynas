@@ -13,3 +13,9 @@ pydantic[email]
 
 #hashing
 passlib[bcrypt]
+
+#for jwt
+python-jose
+
+#for form data
+python-multipart

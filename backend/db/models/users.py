@@ -10,3 +10,5 @@ class User(Base):
     is_active = Column(Boolean(),default=True)
     is_superuser = Column(Boolean(),default=False)
     jobs = relationship("Job",back_populates="owner")
+    posts = relationship("Post",back_populates="owner")
+    comments = relationship("Comment",back_populates="owner")
